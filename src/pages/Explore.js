@@ -8,7 +8,6 @@ const Explore = () =>{
 
     const [searchResualt, setSearchResualt] = useState('');
     const [displayDrinks, setDrinkstodisplay] =useState([]);
-
     
 
     const Search = ()=>{
@@ -18,6 +17,7 @@ const Explore = () =>{
                     e );
             } else{return null}           
         }))
+        if(newArrayList.length !==0){
         setDrinkstodisplay([newArrayList.map((e)=>{
             return(   
                 <Drink
@@ -26,7 +26,8 @@ const Explore = () =>{
                 preparation ={e.preparation}
                 />
             );  
-        })]);
+        })]);}
+        else{setDrinkstodisplay(<p>no result</p>)}
     }
 
     return(
@@ -35,7 +36,7 @@ const Explore = () =>{
         <input id='searchField' onChange = {event =>{setSearchResualt(event.target.value)}}>
         </input>
         <button onClick={Search}> Search</button>
-        {displayDrinks}
+         {displayDrinks}
         </div>
     )
 }
