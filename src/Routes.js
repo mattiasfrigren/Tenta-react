@@ -8,10 +8,10 @@ const Routes =(
 
     <BrowserRouter>
     <LinkBar/>
-    <Switch>
     <Redirect exact from ='/' to='/Home'></Redirect>
+    <Switch>
     <Route path ="/Home" component={Home}></Route>
-    <Route path ="/Explore" component={Explore}></Route>
+    <Route path ="/Explore/:idName" component={Explore}></Route>
     </Switch>
     </BrowserRouter>
     

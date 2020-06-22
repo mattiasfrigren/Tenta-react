@@ -4,11 +4,11 @@ import Drink from '../components/drink';
 
 const allCocktails = Alldrinks.cocktails;
 
-const Explore = () =>{
+const Explore = (props) =>{
 
     const [searchResualt, setSearchResualt] = useState('');
     const [displayDrinks, setDrinkstodisplay] =useState([]);
-    
+    console.log(props.match.params.idName)
 
     const Search = ()=>{
         let newArrayList = (allCocktails.filter((e)=>{

@@ -5,6 +5,7 @@ const NavLinkComp = ({name, linkTo, ID}) => {
         <NavLink
         id={ID}
         to ={linkTo}
+        className ='links'
         >
         {name}
         </NavLink>

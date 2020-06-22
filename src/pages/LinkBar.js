@@ -1,7 +1,7 @@
 import React from 'react';
 import NavLinkComp from '../components/Links'
 
-const pages =[['Home', '/Home'],['Explore','/Explore']];
+const pages =[['Home', '/Home'],['Explore','/Explore/1']];
 
 const LinkBar = () =>{
 

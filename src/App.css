@@ -1,5 +1,16 @@
+
+
 .App {
   text-align: center;
+}
+body{
+  text-align: center;
+}
+.drinkDiv{
+  display: block;
+}
+.links{
+  display: block;
 }
 
 .App-logo {
